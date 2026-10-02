@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wood Rush - Lumber Tycoon Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <aside class="panel left-panel">
+        <h1>Wood Rush</h1>
+
+        <div class="stat-box">
+          <div class="stat">
+            <span>Dinheiro</span>
+            <strong id="moneyValue">$0</strong>
+          </div>
+          <div class="stat">
+            <span>Madeira</span>
+            <strong id="woodValue">0</strong>
+          </div>
+          <div class="stat">
+            <span>Carro</span>
+            <strong id="carValue">Nenhum</strong>
+          </div>
+        </div>
+
+        <div class="label">Machados</div>
+        <div id="axeShop" class="shop-list"></div>
+
+        <div class="label">Loja</div>
+        <div id="upgradeShop" class="shop-list"></div>
+      </aside>
+
+      <main class="game-area">
+        <canvas id="gameCanvas" width="980" height="620"></canvas>
+      </main>
+
+      <aside class="panel right-panel">
+        <div class="label">Objetivo</div>
+        <p>
+          Corte árvores procedurais com galhos conectados, colha a madeira e venda para ganhar dinheiro. Compre machados melhores e upgrades para expandir seu negócio!
+        </p>
+
+        <div class="label">Controles</div>
+        <ul>
+          <li><strong>WASD / Setas</strong> - Mover</li>
+          <li><strong>Mouse</strong> - Cortar galhos</li>
+          <li><strong>E</strong> - Vender madeira</li>
+        </ul>
+
+        <div class="label">Status</div>
+        <div class="status-list">
+          <div>Machado: <strong id="currentAxeName">Machado de Mão</strong></div>
+          <div>Velocidade: <strong id="speedValue">3.4</strong></div>
+          <div>Capacidade: <strong id="capacityValue">10</strong></div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
